@@ -213,6 +213,9 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
+                                    SteeringWheel1.Text = childnode2.InnerText;
+
+
                                 }
 
                                 break;
@@ -226,7 +229,9 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
-                                    
+                                    Transmission1.Text = childnode2.InnerText;
+
+
                                 }
                                 break;
                             case "Horse-power":
@@ -253,6 +258,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
+                                    OnlinePayment1.Text = childnode2.InnerText;
 
                                 }
                                 break;
@@ -266,6 +272,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
+             
 
                                 }
                                 break;
@@ -280,6 +287,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
+                                    Run1.Text = childnode2.InnerText;
 
                                 }
                                 break;
@@ -294,6 +302,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
+                                    Price1.Text = childnode2.InnerText;
 
                                 }
                                 break;
@@ -310,6 +319,7 @@ namespace WindowsFormsApp1
                                         ((TextBox)item).Text = "Нет соответсвия";
 
                                 }
+                                Year1.Text = childnode2.InnerText;
                                 break;
                             case "VIN":
                                 foreach (var item in this.Controls.Find("VIN", true))
@@ -322,6 +332,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
+                                    VIN1.Text = childnode2.InnerText;
 
                                 }
                                 break;

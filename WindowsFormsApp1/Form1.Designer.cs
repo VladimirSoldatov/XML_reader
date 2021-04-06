@@ -71,10 +71,12 @@ namespace WindowsFormsApp1
             this.OnlinePayment1 = new System.Windows.Forms.TextBox();
             this.Model1 = new System.Windows.Forms.TextBox();
             this.MBClass1 = new System.Windows.Forms.TextBox();
-            this.textBox9 = new System.Windows.Forms.TextBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
-            this.textBox11 = new System.Windows.Forms.TextBox();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.SteeringWheel1 = new System.Windows.Forms.TextBox();
+            this.Run1 = new System.Windows.Forms.TextBox();
+            this.Price1 = new System.Windows.Forms.TextBox();
+            this.Transmission1 = new System.Windows.Forms.TextBox();
+            this.VIN1 = new System.Windows.Forms.TextBox();
+            this.Year1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -338,7 +340,7 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(353, 586);
+            this.button1.Location = new System.Drawing.Point(494, 586);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 23);
             this.button1.TabIndex = 45;
@@ -348,7 +350,7 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(548, 588);
+            this.button2.Location = new System.Drawing.Point(666, 586);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 23);
             this.button2.TabIndex = 46;
@@ -420,43 +422,59 @@ namespace WindowsFormsApp1
             this.MBClass1.Size = new System.Drawing.Size(121, 20);
             this.MBClass1.TabIndex = 53;
             // 
-            // textBox9
+            // SteeringWheel1
             // 
-            this.textBox9.Location = new System.Drawing.Point(323, 499);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(121, 20);
-            this.textBox9.TabIndex = 58;
+            this.SteeringWheel1.Location = new System.Drawing.Point(322, 499);
+            this.SteeringWheel1.Name = "SteeringWheel1";
+            this.SteeringWheel1.Size = new System.Drawing.Size(121, 20);
+            this.SteeringWheel1.TabIndex = 58;
             // 
-            // textBox10
+            // Run1
             // 
-            this.textBox10.Location = new System.Drawing.Point(323, 473);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(121, 20);
-            this.textBox10.TabIndex = 57;
+            this.Run1.Location = new System.Drawing.Point(323, 473);
+            this.Run1.Name = "Run1";
+            this.Run1.Size = new System.Drawing.Size(121, 20);
+            this.Run1.TabIndex = 57;
             // 
-            // textBox11
+            // Price1
             // 
-            this.textBox11.Location = new System.Drawing.Point(323, 442);
-            this.textBox11.Name = "textBox11";
-            this.textBox11.Size = new System.Drawing.Size(121, 20);
-            this.textBox11.TabIndex = 56;
+            this.Price1.Location = new System.Drawing.Point(323, 442);
+            this.Price1.Name = "Price1";
+            this.Price1.Size = new System.Drawing.Size(121, 20);
+            this.Price1.TabIndex = 56;
             // 
-            // textBox12
+            // Transmission1
             // 
-            this.textBox12.Location = new System.Drawing.Point(323, 525);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(121, 20);
-            this.textBox12.TabIndex = 59;
+            this.Transmission1.Location = new System.Drawing.Point(323, 525);
+            this.Transmission1.Name = "Transmission1";
+            this.Transmission1.Size = new System.Drawing.Size(121, 20);
+            this.Transmission1.TabIndex = 59;
+            // 
+            // VIN1
+            // 
+            this.VIN1.Location = new System.Drawing.Point(323, 559);
+            this.VIN1.Name = "VIN1";
+            this.VIN1.Size = new System.Drawing.Size(121, 20);
+            this.VIN1.TabIndex = 60;
+            // 
+            // Year1
+            // 
+            this.Year1.Location = new System.Drawing.Point(323, 588);
+            this.Year1.Name = "Year1";
+            this.Year1.Size = new System.Drawing.Size(121, 20);
+            this.Year1.TabIndex = 61;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 628);
-            this.Controls.Add(this.textBox12);
-            this.Controls.Add(this.textBox9);
-            this.Controls.Add(this.textBox10);
-            this.Controls.Add(this.textBox11);
+            this.Controls.Add(this.Year1);
+            this.Controls.Add(this.VIN1);
+            this.Controls.Add(this.Transmission1);
+            this.Controls.Add(this.SteeringWheel1);
+            this.Controls.Add(this.Run1);
+            this.Controls.Add(this.Price1);
             this.Controls.Add(this.OnlinePayment1);
             this.Controls.Add(this.Model1);
             this.Controls.Add(this.MBClass1);
@@ -550,10 +568,12 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox OnlinePayment1;
         private System.Windows.Forms.TextBox Model1;
         private System.Windows.Forms.TextBox MBClass1;
-        private System.Windows.Forms.TextBox textBox9;
-        private System.Windows.Forms.TextBox textBox10;
-        private System.Windows.Forms.TextBox textBox11;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox SteeringWheel1;
+        private System.Windows.Forms.TextBox Run1;
+        private System.Windows.Forms.TextBox Price1;
+        private System.Windows.Forms.TextBox Transmission1;
+        private System.Windows.Forms.TextBox VIN1;
+        private System.Windows.Forms.TextBox Year1;
     }
 }
 
