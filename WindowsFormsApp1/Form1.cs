@@ -1,12 +1,18 @@
-﻿using Newtonsoft.Json.Linq;
-using System;
+﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
 using System.Linq;
 using System.Net.Http;
+using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
+using System.Text.Json;
+using Newtonsoft.Json.Linq;
 using System.Xml.Linq;
+using System.Threading;
 
 namespace WindowsFormsApp1
 {
@@ -79,7 +85,7 @@ namespace WindowsFormsApp1
             XmlElement xRoot = document.DocumentElement;
 
             List<XmlNode> myCars = new List<XmlNode>();
-
+  
             foreach (XmlNode xnode in xRoot)
             {
 
@@ -89,14 +95,14 @@ namespace WindowsFormsApp1
 
 
                     myCars.Add(childnode);
-                    listBox1.Items.Add(childnode.Name);
-
+                    listBox1.Items.Add(childnode.ChildNodes[11].InnerText);
+               
                 }
 
 
             }
-
-
+           
+      
             listBox1.SelectedIndexChanged += (s, e) =>
             {
                 foreach (XmlNode childnode2 in myCars[listBox1.SelectedIndex].ChildNodes)
@@ -144,7 +150,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
-                                    EngineType1.Text = childnode2.InnerText;
+                                    EngineType1.Text= childnode2.InnerText;
                                 }
 
 
@@ -177,7 +183,7 @@ namespace WindowsFormsApp1
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
 
-                                    MBClass1.Text = childnode2.InnerText;
+                                   MBClass1.Text = childnode2.InnerText;
                                 }
 
                                 break;
@@ -220,7 +226,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
-
+                                    
                                 }
                                 break;
                             case "Horse-power":
@@ -356,7 +362,7 @@ namespace WindowsFormsApp1
 
                 List<Dictionary<string, string>> slovar = new List<Dictionary<string, string>>();
                 JToken jObject = JToken.Parse(text_json);
-
+          
                 foreach (var item in jObject)
 
                 {
@@ -375,7 +381,7 @@ namespace WindowsFormsApp1
             }
             return my_list.ToArray();
         }
-        private void label3_Click(object sender, EventArgs e)
+            private void label3_Click(object sender, EventArgs e)
         {
 
         }
