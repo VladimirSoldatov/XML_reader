@@ -1,7 +1,7 @@
 ﻿
 namespace WindowsFormsApp1
 {
-    partial class Form1
+    partial class Auto
     {
         /// <summary>
         /// Обязательная переменная конструктора.
@@ -75,8 +75,8 @@ namespace WindowsFormsApp1
             this.Run1 = new System.Windows.Forms.TextBox();
             this.Price1 = new System.Windows.Forms.TextBox();
             this.Transmission1 = new System.Windows.Forms.TextBox();
-            this.VIN1 = new System.Windows.Forms.TextBox();
             this.Year1 = new System.Windows.Forms.TextBox();
+            this.VIN1 = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -340,7 +340,7 @@ namespace WindowsFormsApp1
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(494, 586);
+            this.button1.Location = new System.Drawing.Point(494, 588);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 23);
             this.button1.TabIndex = 45;
@@ -350,7 +350,7 @@ namespace WindowsFormsApp1
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(666, 586);
+            this.button2.Location = new System.Drawing.Point(666, 588);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(122, 23);
             this.button2.TabIndex = 46;
@@ -424,7 +424,7 @@ namespace WindowsFormsApp1
             // 
             // SteeringWheel1
             // 
-            this.SteeringWheel1.Location = new System.Drawing.Point(322, 499);
+            this.SteeringWheel1.Location = new System.Drawing.Point(323, 499);
             this.SteeringWheel1.Name = "SteeringWheel1";
             this.SteeringWheel1.Size = new System.Drawing.Size(121, 20);
             this.SteeringWheel1.TabIndex = 58;
@@ -450,13 +450,6 @@ namespace WindowsFormsApp1
             this.Transmission1.Size = new System.Drawing.Size(121, 20);
             this.Transmission1.TabIndex = 59;
             // 
-            // VIN1
-            // 
-            this.VIN1.Location = new System.Drawing.Point(323, 559);
-            this.VIN1.Name = "VIN1";
-            this.VIN1.Size = new System.Drawing.Size(121, 20);
-            this.VIN1.TabIndex = 60;
-            // 
             // Year1
             // 
             this.Year1.Location = new System.Drawing.Point(323, 588);
@@ -464,7 +457,14 @@ namespace WindowsFormsApp1
             this.Year1.Size = new System.Drawing.Size(121, 20);
             this.Year1.TabIndex = 61;
             // 
-            // Form1
+            // VIN1
+            // 
+            this.VIN1.Location = new System.Drawing.Point(323, 557);
+            this.VIN1.Name = "VIN1";
+            this.VIN1.Size = new System.Drawing.Size(121, 20);
+            this.VIN1.TabIndex = 60;
+            // 
+            // Auto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -517,7 +517,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "Form1";
+            this.Name = "Auto";
             this.Text = "Form1";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -572,8 +572,8 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox Run1;
         private System.Windows.Forms.TextBox Price1;
         private System.Windows.Forms.TextBox Transmission1;
-        private System.Windows.Forms.TextBox VIN1;
         private System.Windows.Forms.TextBox Year1;
+        private System.Windows.Forms.TextBox VIN1;
     }
 }
 

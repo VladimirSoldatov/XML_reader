@@ -1,27 +1,21 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
 using System.Linq;
 using System.Net.Http;
-using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Xml;
-using System.Text.Json;
 using Newtonsoft.Json.Linq;
 using System.Xml.Linq;
-using System.Threading;
 
 namespace WindowsFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class Auto : Form
     {
         bool myBool = false;
         bool decide = false;
 
-        public Form1()
+        public Auto()
         {
             InitializeComponent();
 
@@ -85,7 +79,7 @@ namespace WindowsFormsApp1
             XmlElement xRoot = document.DocumentElement;
 
             List<XmlNode> myCars = new List<XmlNode>();
-
+  
             foreach (XmlNode xnode in xRoot)
             {
 
@@ -95,8 +89,8 @@ namespace WindowsFormsApp1
 
 
                     myCars.Add(childnode);
-                    listBox1.Items.Add(childnode.Name);
-
+                    listBox1.Items.Add(childnode.ChildNodes[11].InnerText);
+               
                 }
 
 
@@ -213,9 +207,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
-                                    SteeringWheel1.Text = childnode2.InnerText;
-
-
+                                    Transmission1.Text = childnode2.InnerText;
                                 }
 
                                 break;
@@ -230,8 +222,6 @@ namespace WindowsFormsApp1
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
                                     Transmission1.Text = childnode2.InnerText;
-
-
                                 }
                                 break;
                             case "Horse-power":
@@ -259,7 +249,6 @@ namespace WindowsFormsApp1
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
                                     OnlinePayment1.Text = childnode2.InnerText;
-
                                 }
                                 break;
                             case "OnlinePaymentUrl":
@@ -272,7 +261,6 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
-             
 
                                 }
                                 break;
@@ -288,7 +276,6 @@ namespace WindowsFormsApp1
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
                                     Run1.Text = childnode2.InnerText;
-
                                 }
                                 break;
                             case "Price":
@@ -303,7 +290,6 @@ namespace WindowsFormsApp1
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
                                     Price1.Text = childnode2.InnerText;
-
                                 }
                                 break;
                             case "Year":
@@ -319,7 +305,6 @@ namespace WindowsFormsApp1
                                         ((TextBox)item).Text = "Нет соответсвия";
 
                                 }
-                                Year1.Text = childnode2.InnerText;
                                 break;
                             case "VIN":
                                 foreach (var item in this.Controls.Find("VIN", true))
@@ -333,12 +318,11 @@ namespace WindowsFormsApp1
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
                                     VIN1.Text = childnode2.InnerText;
-
                                 }
                                 break;
                             case "Images":
                                 Form newWindows = new Form();
-                                if (childnode2.ChildNodes != null)
+                             /*  if (childnode2.ChildNodes != null)
                                     foreach (var childNode3 in childnode2.ChildNodes)
                                     {
 
@@ -347,7 +331,7 @@ namespace WindowsFormsApp1
                                         this.Controls.Add(textBox);
 
                                     }
-
+                             */
                                 break;
 
                         }
