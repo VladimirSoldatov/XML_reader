@@ -77,6 +77,11 @@ namespace WindowsFormsApp1
             this.Transmission1 = new System.Windows.Forms.TextBox();
             this.Year1 = new System.Windows.Forms.TextBox();
             this.VIN1 = new System.Windows.Forms.TextBox();
+            this.EquipmentText = new System.Windows.Forms.TextBox();
+            this.Description = new System.Windows.Forms.TextBox();
+            this.label17 = new System.Windows.Forms.Label();
+            this.label18 = new System.Windows.Forms.Label();
+            this.button3 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -100,7 +105,7 @@ namespace WindowsFormsApp1
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(14, 332);
+            this.label3.Location = new System.Drawing.Point(10, 334);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(48, 13);
             this.label3.TabIndex = 16;
@@ -119,7 +124,7 @@ namespace WindowsFormsApp1
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(16, 357);
+            this.label5.Location = new System.Drawing.Point(12, 359);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(36, 13);
             this.label5.TabIndex = 18;
@@ -128,7 +133,7 @@ namespace WindowsFormsApp1
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(14, 383);
+            this.label6.Location = new System.Drawing.Point(10, 385);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(78, 13);
             this.label6.TabIndex = 19;
@@ -137,7 +142,7 @@ namespace WindowsFormsApp1
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(14, 410);
+            this.label7.Location = new System.Drawing.Point(10, 412);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(91, 13);
             this.label7.TabIndex = 20;
@@ -146,7 +151,7 @@ namespace WindowsFormsApp1
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(15, 445);
+            this.label8.Location = new System.Drawing.Point(11, 447);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(31, 13);
             this.label8.TabIndex = 21;
@@ -155,7 +160,7 @@ namespace WindowsFormsApp1
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(15, 472);
+            this.label9.Location = new System.Drawing.Point(11, 474);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(27, 13);
             this.label9.TabIndex = 22;
@@ -164,7 +169,7 @@ namespace WindowsFormsApp1
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(15, 499);
+            this.label10.Location = new System.Drawing.Point(11, 501);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 13);
             this.label10.TabIndex = 23;
@@ -173,7 +178,7 @@ namespace WindowsFormsApp1
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(16, 525);
+            this.label11.Location = new System.Drawing.Point(12, 527);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(68, 13);
             this.label11.TabIndex = 24;
@@ -182,7 +187,7 @@ namespace WindowsFormsApp1
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Location = new System.Drawing.Point(16, 559);
+            this.label12.Location = new System.Drawing.Point(12, 561);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(25, 13);
             this.label12.TabIndex = 25;
@@ -191,7 +196,7 @@ namespace WindowsFormsApp1
             // label13
             // 
             this.label13.AutoSize = true;
-            this.label13.Location = new System.Drawing.Point(16, 586);
+            this.label13.Location = new System.Drawing.Point(12, 588);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(29, 13);
             this.label13.TabIndex = 26;
@@ -232,7 +237,7 @@ namespace WindowsFormsApp1
             // MBClass
             // 
             this.MBClass.FormattingEnabled = true;
-            this.MBClass.Location = new System.Drawing.Point(151, 322);
+            this.MBClass.Location = new System.Drawing.Point(147, 324);
             this.MBClass.Name = "MBClass";
             this.MBClass.Size = new System.Drawing.Size(121, 21);
             this.MBClass.TabIndex = 31;
@@ -240,7 +245,7 @@ namespace WindowsFormsApp1
             // Model
             // 
             this.Model.FormattingEnabled = true;
-            this.Model.Location = new System.Drawing.Point(151, 349);
+            this.Model.Location = new System.Drawing.Point(147, 351);
             this.Model.Name = "Model";
             this.Model.Size = new System.Drawing.Size(121, 21);
             this.Model.TabIndex = 32;
@@ -248,7 +253,7 @@ namespace WindowsFormsApp1
             // SteeringWheel
             // 
             this.SteeringWheel.FormattingEnabled = true;
-            this.SteeringWheel.Location = new System.Drawing.Point(151, 497);
+            this.SteeringWheel.Location = new System.Drawing.Point(147, 499);
             this.SteeringWheel.Name = "SteeringWheel";
             this.SteeringWheel.Size = new System.Drawing.Size(121, 21);
             this.SteeringWheel.TabIndex = 33;
@@ -256,7 +261,7 @@ namespace WindowsFormsApp1
             // Transmission
             // 
             this.Transmission.FormattingEnabled = true;
-            this.Transmission.Location = new System.Drawing.Point(151, 524);
+            this.Transmission.Location = new System.Drawing.Point(147, 526);
             this.Transmission.Name = "Transmission";
             this.Transmission.Size = new System.Drawing.Size(121, 21);
             this.Transmission.TabIndex = 34;
@@ -297,35 +302,35 @@ namespace WindowsFormsApp1
             // 
             // OnlinePaymentUrl
             // 
-            this.OnlinePaymentUrl.Location = new System.Drawing.Point(151, 414);
+            this.OnlinePaymentUrl.Location = new System.Drawing.Point(147, 416);
             this.OnlinePaymentUrl.Name = "OnlinePaymentUrl";
             this.OnlinePaymentUrl.Size = new System.Drawing.Size(311, 20);
             this.OnlinePaymentUrl.TabIndex = 39;
             // 
             // Price
             // 
-            this.Price.Location = new System.Drawing.Point(151, 445);
+            this.Price.Location = new System.Drawing.Point(147, 447);
             this.Price.Name = "Price";
             this.Price.Size = new System.Drawing.Size(121, 20);
             this.Price.TabIndex = 40;
             // 
             // Run
             // 
-            this.Run.Location = new System.Drawing.Point(151, 471);
+            this.Run.Location = new System.Drawing.Point(147, 473);
             this.Run.Name = "Run";
             this.Run.Size = new System.Drawing.Size(121, 20);
             this.Run.TabIndex = 41;
             // 
             // VIN
             // 
-            this.VIN.Location = new System.Drawing.Point(151, 559);
+            this.VIN.Location = new System.Drawing.Point(147, 561);
             this.VIN.Name = "VIN";
             this.VIN.Size = new System.Drawing.Size(121, 20);
             this.VIN.TabIndex = 42;
             // 
             // Year
             // 
-            this.Year.Location = new System.Drawing.Point(151, 590);
+            this.Year.Location = new System.Drawing.Point(147, 592);
             this.Year.Name = "Year";
             this.Year.Size = new System.Drawing.Size(121, 20);
             this.Year.TabIndex = 43;
@@ -333,7 +338,7 @@ namespace WindowsFormsApp1
             // OnlinePayment
             // 
             this.OnlinePayment.FormattingEnabled = true;
-            this.OnlinePayment.Location = new System.Drawing.Point(151, 380);
+            this.OnlinePayment.Location = new System.Drawing.Point(147, 382);
             this.OnlinePayment.Name = "OnlinePayment";
             this.OnlinePayment.Size = new System.Drawing.Size(121, 21);
             this.OnlinePayment.TabIndex = 44;
@@ -403,72 +408,120 @@ namespace WindowsFormsApp1
             // 
             // OnlinePayment1
             // 
-            this.OnlinePayment1.Location = new System.Drawing.Point(323, 380);
+            this.OnlinePayment1.Location = new System.Drawing.Point(319, 382);
             this.OnlinePayment1.Name = "OnlinePayment1";
             this.OnlinePayment1.Size = new System.Drawing.Size(121, 20);
             this.OnlinePayment1.TabIndex = 55;
             // 
             // Model1
             // 
-            this.Model1.Location = new System.Drawing.Point(323, 354);
+            this.Model1.Location = new System.Drawing.Point(319, 356);
             this.Model1.Name = "Model1";
             this.Model1.Size = new System.Drawing.Size(121, 20);
             this.Model1.TabIndex = 54;
             // 
             // MBClass1
             // 
-            this.MBClass1.Location = new System.Drawing.Point(323, 323);
+            this.MBClass1.Location = new System.Drawing.Point(319, 325);
             this.MBClass1.Name = "MBClass1";
             this.MBClass1.Size = new System.Drawing.Size(121, 20);
             this.MBClass1.TabIndex = 53;
             // 
             // SteeringWheel1
             // 
-            this.SteeringWheel1.Location = new System.Drawing.Point(323, 499);
+            this.SteeringWheel1.Location = new System.Drawing.Point(319, 501);
             this.SteeringWheel1.Name = "SteeringWheel1";
             this.SteeringWheel1.Size = new System.Drawing.Size(121, 20);
             this.SteeringWheel1.TabIndex = 58;
             // 
             // Run1
             // 
-            this.Run1.Location = new System.Drawing.Point(323, 473);
+            this.Run1.Location = new System.Drawing.Point(319, 475);
             this.Run1.Name = "Run1";
             this.Run1.Size = new System.Drawing.Size(121, 20);
             this.Run1.TabIndex = 57;
             // 
             // Price1
             // 
-            this.Price1.Location = new System.Drawing.Point(323, 442);
+            this.Price1.Location = new System.Drawing.Point(319, 444);
             this.Price1.Name = "Price1";
             this.Price1.Size = new System.Drawing.Size(121, 20);
             this.Price1.TabIndex = 56;
             // 
             // Transmission1
             // 
-            this.Transmission1.Location = new System.Drawing.Point(323, 525);
+            this.Transmission1.Location = new System.Drawing.Point(319, 527);
             this.Transmission1.Name = "Transmission1";
             this.Transmission1.Size = new System.Drawing.Size(121, 20);
             this.Transmission1.TabIndex = 59;
             // 
             // Year1
             // 
-            this.Year1.Location = new System.Drawing.Point(323, 588);
+            this.Year1.Location = new System.Drawing.Point(319, 590);
             this.Year1.Name = "Year1";
             this.Year1.Size = new System.Drawing.Size(121, 20);
             this.Year1.TabIndex = 61;
             // 
             // VIN1
             // 
-            this.VIN1.Location = new System.Drawing.Point(323, 557);
+            this.VIN1.Location = new System.Drawing.Point(319, 559);
             this.VIN1.Name = "VIN1";
             this.VIN1.Size = new System.Drawing.Size(121, 20);
             this.VIN1.TabIndex = 60;
+            // 
+            // EquipmentText
+            // 
+            this.EquipmentText.Location = new System.Drawing.Point(323, 171);
+            this.EquipmentText.Multiline = true;
+            this.EquipmentText.Name = "EquipmentText";
+            this.EquipmentText.Size = new System.Drawing.Size(121, 108);
+            this.EquipmentText.TabIndex = 62;
+            // 
+            // Description
+            // 
+            this.Description.Location = new System.Drawing.Point(319, 299);
+            this.Description.Name = "Description";
+            this.Description.Size = new System.Drawing.Size(121, 20);
+            this.Description.TabIndex = 63;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Location = new System.Drawing.Point(12, 299);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(60, 13);
+            this.label17.TabIndex = 64;
+            this.label17.Text = "Description";
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Location = new System.Drawing.Point(13, 265);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(78, 13);
+            this.label18.TabIndex = 65;
+            this.label18.Text = "EquipmentText";
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(8, 224);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(122, 23);
+            this.button3.TabIndex = 66;
+            this.button3.Text = "Перегрузить данные";
+            this.button3.UseVisualStyleBackColor = true;
+            this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
             // Auto
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 628);
+            this.Controls.Add(this.button3);
+            this.Controls.Add(this.label18);
+            this.Controls.Add(this.label17);
+            this.Controls.Add(this.Description);
+            this.Controls.Add(this.EquipmentText);
             this.Controls.Add(this.Year1);
             this.Controls.Add(this.VIN1);
             this.Controls.Add(this.Transmission1);
@@ -519,6 +572,7 @@ namespace WindowsFormsApp1
             this.Controls.Add(this.label1);
             this.Name = "Auto";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Auto_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -574,6 +628,11 @@ namespace WindowsFormsApp1
         private System.Windows.Forms.TextBox Transmission1;
         private System.Windows.Forms.TextBox Year1;
         private System.Windows.Forms.TextBox VIN1;
+        private System.Windows.Forms.TextBox EquipmentText;
+        private System.Windows.Forms.TextBox Description;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Button button3;
     }
 }
 

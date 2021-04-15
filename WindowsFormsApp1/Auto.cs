@@ -207,7 +207,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((ComboBox)item).Text = "Нет соответсвия";
-                                    Transmission1.Text = childnode2.InnerText;
+                                    SteeringWheel1.Text = childnode2.InnerText;
                                 }
 
                                 break;
@@ -261,7 +261,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
-
+                              
                                 }
                                 break;
                             case "Run":
@@ -303,7 +303,7 @@ namespace WindowsFormsApp1
                                     }
                                     else
                                         ((TextBox)item).Text = "Нет соответсвия";
-
+                                    Year1.Text = childnode2.InnerText;
                                 }
                                 break;
                             case "VIN":
@@ -320,6 +320,22 @@ namespace WindowsFormsApp1
                                     VIN1.Text = childnode2.InnerText;
                                 }
                                 break;
+                            case "Description":
+                    
+                                
+
+
+                           
+                                    Description.Text = childnode2.InnerText;
+                         
+                                break;
+                            case "EquipmentText":
+                                foreach (var item in this.Controls.Find("EquipmentText", true))
+                                {
+
+                                   EquipmentText.Text = childnode2.InnerText;
+                                }
+                                break;
                             case "Images":
                                 Form newWindows = new Form();
                              /*  if (childnode2.ChildNodes != null)
@@ -333,6 +349,7 @@ namespace WindowsFormsApp1
                                     }
                              */
                                 break;
+
 
                         }
 
@@ -391,6 +408,17 @@ namespace WindowsFormsApp1
         {
             myBool = true;
             decide = false;
+        }
+
+        private void Auto_Load(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            parse_XML();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
