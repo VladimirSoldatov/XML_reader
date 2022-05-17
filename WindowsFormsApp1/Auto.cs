@@ -397,17 +397,7 @@ namespace WindowsFormsApp1
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            myBool = true;
-            decide = true;
-        }
-
-        private void button2_Click(object sender, EventArgs e)
-        {
-            myBool = true;
-            decide = false;
-        }
+   
 
         private void Auto_Load(object sender, EventArgs e)
         {
