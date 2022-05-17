@@ -12,8 +12,7 @@ namespace WindowsFormsApp1
 {
     public partial class Auto : Form
     {
-        bool myBool = false;
-        bool decide = false;
+   
 
         public Auto()
         {
