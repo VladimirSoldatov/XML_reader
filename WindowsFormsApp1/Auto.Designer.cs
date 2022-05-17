@@ -351,7 +351,6 @@ namespace WindowsFormsApp1
             this.button1.TabIndex = 45;
             this.button1.Text = "Принять";
             this.button1.UseVisualStyleBackColor = true;
-
             // 
             // button2
             // 
@@ -361,7 +360,6 @@ namespace WindowsFormsApp1
             this.button2.TabIndex = 46;
             this.button2.Text = "Не принять";
             this.button2.UseVisualStyleBackColor = true;
-
             // 
             // listBox1
             // 
@@ -471,17 +469,17 @@ namespace WindowsFormsApp1
             // 
             // EquipmentText
             // 
-            this.EquipmentText.Location = new System.Drawing.Point(323, 171);
+            this.EquipmentText.Location = new System.Drawing.Point(151, 171);
             this.EquipmentText.Multiline = true;
             this.EquipmentText.Name = "EquipmentText";
-            this.EquipmentText.Size = new System.Drawing.Size(121, 108);
+            this.EquipmentText.Size = new System.Drawing.Size(293, 108);
             this.EquipmentText.TabIndex = 62;
             // 
             // Description
             // 
-            this.Description.Location = new System.Drawing.Point(319, 299);
+            this.Description.Location = new System.Drawing.Point(151, 299);
             this.Description.Name = "Description";
-            this.Description.Size = new System.Drawing.Size(121, 20);
+            this.Description.Size = new System.Drawing.Size(289, 20);
             this.Description.TabIndex = 63;
             // 
             // label17
